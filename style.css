@@ -2,13 +2,13 @@
     display: inline-block;
     border: 1px black solid;
     border-radius: 5%;
-    padding: 10px;
+    padding: 30px 50px;
     text-align: left;
     box-shadow: 10px 10px 15px rgba(26, 23, 23, 0.479);
     margin: auto;
 }
 
-.close_form{
+#close_form{
     display: block;
     position: absolute;
     top: 5px;
@@ -54,20 +54,18 @@ label {
     width: 70px;
 }
 
-.button_send {
-    margin: auto;
-    width: 100px;
-    height: 30px;
-    border-radius: 15%;
-    background-color:  green;
-    color: white;
-    border: none;
-    box-shadow: 5px 5px 15px rgba(26, 23, 23, 0.479);
+.btn_hover {
+    padding: 15px 20px;
+    text-align: center;
     transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
 }
 
-.button_send:hover {
-    width: 105px;
-    height: 35px;
-    background-color: rgba(0, 128, 0, 0.719);
+.btn_hover:hover {
+    background-position: right center;
 }
+
