@@ -2,28 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Formularz</title>
 </head>
 <body style="text-align: center;">
-    <!--<button id="open_form">Zalogować się</button>-->
     <h1>Formularz</h1>
     <form action="" id="form" >
-        <button class="close_form">x</button>
-        <br>
         <label for="name">Imię:</label>
-        <input type="text" id="name">
+        <input type="text" id="name" required>
         <br>
-        <label for="surname">Nazwisko:</label>
+        <label for="surname" required>Nazwisko:</label>
         <input type="text" id="surname">
         <br>
-        <div style="text-align: center;">
-        <input type="email" name="email" id="email" placeholder="e-mail"> 
+        <div style="text-align: right;">
+        <input type="email" name="email"  id="email" placeholder="e-mail" required> 
         <br>
-        <input type="number" placeholder="numer telefonu">
+        <input type="phone" placeholder="numer telefonu" required>
         <br>
-        <input type="password" name="pass" id="pass" placeholder="hasło">
+        <input type="password" name="pass" id="pass" placeholder="hasło" required>
         </div>
         <br>
         <label for="seks" style="width: auto;">Wybierz plec:</label> 
@@ -42,11 +38,13 @@
         <option value="l">Lublin</option>   
         </select>
         <br>
-        <input type="checkbox" name="regulamin" id="regulamin">
+        <input type="checkbox" name="regulamin" id="regulamin" required>
         <label for="regulamin" style="width: auto;" >Potwierdź regulamin</label>
         <br>
-        <button class="button_send">Wyślać</button>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+        <button type="reset" class="btn_hover ">Resetuj</button>
+        <button type="submit" class="btn_hover">Wyślać</button>
+        </div>
     </form>
-    <script src="script.js"></script>
 </body>
 </html>
